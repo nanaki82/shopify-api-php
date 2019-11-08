@@ -11,14 +11,12 @@
 
 namespace Slince\Shopify\Hydrator;
 
-use JMS\Serializer\SerializationContext;
-use JMS\Serializer\Serializer;
-use JMS\Serializer\SerializerBuilder;
+use Symfony\Component\Serializer\SerializerInterface;
 
 class Hydrator implements HydratorInterface
 {
     /**
-     * @var Serializer
+     * @var SerializerInterface
      */
     protected $serializer;
 
